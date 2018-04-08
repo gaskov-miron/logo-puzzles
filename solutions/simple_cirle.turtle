@@ -1,0 +1,5 @@
+kturtle-script-v1.0
+@(reset)
+@(repeat) 360 {
+@(forward) 1 @(turnright) 1
+}
