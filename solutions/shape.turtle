@@ -1,0 +1,20 @@
+kturtle-script-v1.0
+@(learn) shape $run@(,) $n@(,) $level{
+  @(if) $level > 0  {
+      @(repeat) $n{
+        @(forward) $run / 3
+      @(turnleft) (180 - (360/($n+1)))
+      shape $run/3@(,) $n+1@(,) $level-1
+      @(turnright) (180 - (360/($n+1)))
+      @(forward) $run / 1.5
+      @(turnright) 360/$n
+      }
+  }
+}
+@(reset)
+@(turnright) 30
+$run = 150
+$n = 5
+shape 100@(,) 3@(,) 5
+
+
