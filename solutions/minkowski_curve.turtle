@@ -1,0 +1,19 @@
+kturtle-script-v1.0
+@(learn) shape $run@(,) $n{
+  @(if) $n > 0  {
+  shape $run/4@(,) $n-1 @(turnleft) 90
+  shape $run/4@(,) $n-1 @(turnright) 90
+  shape $run/4@(,) $n-1 @(turnright) 90
+  shape $run/4@(,) $n-1 
+  shape $run/4@(,) $n-1 @(turnleft) 90
+  shape $run/4@(,) $n-1 @(turnleft) 90
+  shape $run/4@(,) $n-1 @(turnright) 90
+  shape $run/4@(,) $n-1   
+  } 
+  @(else){
+    @(forward) $run*4
+  }
+}
+@(reset)
+@(turnright) 90
+shape 50@(,) 3
