@@ -1,0 +1,10 @@
+kturtle-script-v1.0
+@(reset)
+@(forward) 60
+@(turnleft) 45
+@(repeat) 12{
+@(repeat) 120{
+@(forward) 0.5 @(turnright) 1
+} @(turnright) 90
+}
+@(penup) @(backward) 60
