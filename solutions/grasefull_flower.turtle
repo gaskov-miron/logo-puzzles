@@ -1,0 +1,38 @@
+kturtle-script-v1.0
+@(learn) shape2 $run@(,) $n{
+  @(forward) $run
+   @(if) $n > 1 {  
+  @(turnright) 45
+  shape2 $run/1.3@(,) $n-1
+  @(turnleft) 90
+  shape2 $run/1.3@(,) $n-1
+  @(turnright) 45
+  }  
+  @(backward) $run
+}
+@(learn) shape $k@(,) $run@(,) $n{
+@(repeat) 180{
+  @(forward) $run @(turnright) 1*$k
+}
+   @(if) $n > 1 {  
+  @(turnright) 45
+  shape 1@(,) $run/3@(,) $n-1
+  @(turnleft) 90
+  shape -1@(,) $run/3@(,) $n-1
+  @(turnright) 45
+  }  
+  @(repeat) 180{
+   @(turnleft) 1*$k @(backward) $run
+  }
+}
+@(reset)
+@(turnright) 12
+shape 1@(,) 1@(,) 3
+@(turnleft) 30
+shape 1@(,) 1@(,) 3
+@(turnright) 15
+shape2 50@(,) 5
+@(turnleft) 15
+shape -1@(,) 1@(,) 3
+@(turnright) 30
+shape -1@(,) 1@(,) 3
