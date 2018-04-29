@@ -1,0 +1,18 @@
+kturtle-script-v1.0
+@(learn) shape $run@(,) $n{
+  @(if) $n > 0  {@(turnright) 60
+  shape $run/3@(,) $n-1 @(turnleft) 60
+  shape $run/3@(,) $n-1 
+  } 
+  @(else){
+    @(forward) $run*3*$q
+  }
+}
+@(reset)
+@(turnright) 90
+$k = 10
+$q = 1
+@(repeat) $k-($k*2/5){$q = $q * 5}
+@(repeat) 3{
+shape 1@(,) $k @(turnright) 120
+}
