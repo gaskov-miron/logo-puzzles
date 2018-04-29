@@ -1,0 +1,27 @@
+kturtle-script-v1.0
+@(reset)
+@(pd)
+@(forward) 20 @(turnright) 90 @(forward) 15
+@(turnright) 90 @(forward) 5 @(turnleft) 90
+@(forward) 5 @(turnleft) 45 @(forward) 3
+@(turnleft) 45 @(forward) 5 @(turnleft) 90
+@(forward) 5 @(turnleft) 45 @(forward) 3
+@(turnright) 45 @(forward) 15 @(turnright) 135
+@(forward) 10 @(turnright) 45 @(forward) 20 
+@(turnright) 135 @(forward) 6 @(backward) 6
+@(turnleft) 45 @(forward) 20 @(turnright) 45
+@(forward) 10 @(turnright) 135 @(forward) 15
+@(backward) 15 @(turnleft) 90 @(forward) 20
+@(turnright) 135 @(forward) 2 @(pu) @(forward) 2
+@(pd) @(forward) 2 @(pu) @(forward) 2 @(pd) @(forward) 2
+@(turnleft) 45 @(forward) 2 @(pu) @(forward) 2
+@(pd) @(forward) 2 @(pu) @(forward) 2 @(pd) @(forward) 2
+@(pu) @(forward) 2 @(pu) @(forward) 2
+@(pd) @(forward) 2 @(pu) @(forward) 2 @(pd) @(forward) 2
+@(pu) @(backward) 20 @(turnright) 90
+@(pd) @(forward) 2
+@(pd) @(forward) 2 @(pu) @(forward) 2 @(pd) @(forward) 2
+@(pu) @(forward) 2 @(pu) @(forward) 2
+@(pd) @(forward) 2 @(pu) @(forward) 2 @(pd) @(forward) 2
+@(turnright) 90
+@(pu) @(forward) 100
