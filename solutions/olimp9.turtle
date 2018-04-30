@@ -1,0 +1,17 @@
+kturtle-script-v1.0
+@(learn) shape{
+$m = 10
+  @(repeat) 15{
+    @(repeat) 5{
+      @(forward) $m
+      @(turnright) 72
+    }
+  $m = $m + 5
+  }
+}
+@(reset)
+@(turnright) 15
+@(repeat) 5{
+  shape
+  @(turnright) 72
+}
