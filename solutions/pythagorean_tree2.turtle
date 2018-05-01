@@ -1,0 +1,26 @@
+kturtle-script-v1.0
+@(learn) shape $run@(,) $n{
+  @(turnleft) 90 @(forward) $run/2
+  @(turnright) 90 @(repeat) 5{
+  @(forward) $run @(turnright) 90}
+  @(forward) $run/2 @(turnleft) 90
+  @(pu) @(backward) 1 
+  @(canvascolor) 0@(,) 255-$n@(,) 0
+  @(forward) 1 @(pd)
+   @(if) $n > 1 {  
+  @(turnleft) 45 @(pu)
+@(forward) ($run/(@(sqrt) 2))/2
+
+@(pd) shape $run/(@(sqrt) 2)@(,) $n-1 @(pu)
+
+@(backward) ($run/(@(sqrt) 2))/2
+@(pd) @(turnright) 90 @(pu)
+@(forward) ($run/(@(sqrt) 2))/2
+@(pd) shape $run/(@(sqrt) 2)@(,) $n-1 @(pu)
+@(backward) ($run/(@(sqrt) 2))/2
+  @(turnleft) 45
+  } 
+  @(pu) @(backward) $run @(pd)
+}
+@(reset)
+shape 50@(,) 8
