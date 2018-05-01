@@ -5,13 +5,19 @@ kturtle-script-v1.0
 @(forward) 30
 @(turnleft) 45
 @(forward) 42.5
-@(turnleft) 135 
-@(forward) 60
+@(turnleft) 135
+@(pd)
+@(forward) 17.5
+@(pu)
+@(pu)
+@(forward) 42.5
+
 @(turnleft) 90
 @(forward) 30
 @(turnleft) 90
 @(forward) 30
 @(turnright) 45
+@(pd)
 }
 
 @(reset)

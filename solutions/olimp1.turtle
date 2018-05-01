@@ -1,0 +1,24 @@
+kturtle-script-v1.0
+@(reset)
+@(pu) @(backward) 100
+@(turnright) 90 @(backward) 100
+@(turnleft) 90
+$m = 100 @(pd)
+@(forward) $m*2
+@(turnright) 90
+@(forward) $m*3/4
+@(turnright) 90
+@(forward) $m/4 @(pu)
+@(backward) $m/4 @(pd)
+@(turnleft) 90 @(forward) $m/4
+@(turnright) 90 @(forward) $m/2
+
+@(turnright) 90
+
+@(forward) $m/2 @(turnright) 90 
+@(forward) $m/4 @(turnleft) 90
+@(pu) @(backward) $m/4 @(pd)
+@(forward) $m/4 @(turnright) 90
+@(forward) $m*3/4
+@(turnright) 90
+@(forward) $m*2

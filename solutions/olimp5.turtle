@@ -1,0 +1,25 @@
+kturtle-script-v1.0
+@(learn) shape $run{
+@(forward) $run
+@(turnright) 45
+@(repeat) 4{@(forward) $run/3 @(turnleft) 90}
+@(turnright) 135
+@(pu) @(forward) $run/3 @(pd)
+@(turnright) 90 @(forward) $run/3
+@(turnleft) 90 @(forward) $run/3
+@(turnleft) 90 @(forward) $run/3 @(pu)
+@(turnleft) 90 @(forward) $run/3
+@(turnleft) 90 @(pd) @(forward) $run*2/3
+}
+
+@(reset)
+@(pu) @(turnright) 60
+@(backward) 70
+@(turnleft) 60
+@(backward) 70
+@(pd)
+$run = 80
+@(repeat) 12{
+shape $run
+@(turnright) 120
+}

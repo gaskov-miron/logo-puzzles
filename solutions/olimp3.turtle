@@ -1,0 +1,10 @@
+kturtle-script-v1.0
+@(reset) @(pu)
+@(turnright) 90 @(backward) 100
+@(turnleft) 90 @(pd)
+$m = 2 @(pd)
+@(repeat) 360{@(forward) $m @(turnright) $m/2}@(turnright) 45
+@(repeat) 8{
+  @(repeat) 135{@(forward) $m @(turnright) $m/2}
+  @(turnright) 90
+}
