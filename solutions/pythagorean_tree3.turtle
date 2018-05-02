@@ -1,0 +1,31 @@
+kturtle-script-v1.0
+@(learn) shape $run@(,) $n{
+  @(turnleft) 90 @(forward) $run/2
+  @(turnright) 90 @(repeat) 5{
+  @(forward) $run @(turnright) 90}
+  @(forward) $run/2 @(turnleft) 90
+  @(pu) @(backward) 1 
+  @(forward) 1 @(pd)
+   @(if) $n > 1 {  
+$c = @(sqrt)(($run/2)*($run/2)+($run/2.4)*($run/2.4)-($run*$run/2.4*@(cos)(30)))
+  @(turnleft) 30 @(pu)
+@(forward) $c
+
+@(pd) shape $run/1.2@(,) $n-1 @(pu)
+
+@(backward) $c
+$c2 = @(sqrt)($run*$run+$run/1.2*$run/1.2-(2*$run*$run/1.2*@(cos)(30)))
+$b = @(arcsin)($run/1.2*@(sin) 30/$c2)
+$c3 = @(sqrt)(($run/2)*($run/2)+($c2/2)*($c2/2)-($run*$c2/2*@(cos)($b)))
+@(pd) @(turnright) 30+$b @(pu)
+@(forward) $c3
+@(pd) shape $c2@(,) $n-1 @(pu)
+@(backward) $c3
+  @(turnleft) $b
+  } 
+  @(pu) @(backward) $run @(pd)
+}
+@(reset)
+@(pu) @(backward) 100 @(turnleft) 90
+@(backward) 40 @(turnright) 90 @(pd)
+shape 50@(,) 16
