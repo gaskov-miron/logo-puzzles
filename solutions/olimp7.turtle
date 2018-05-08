@@ -1,0 +1,18 @@
+kturtle-script-v1.0
+@(learn) shape $m{
+@(repeat) 45{@(forward) 1 @(turnright) 1*$m}
+@(repeat) 360{@(forward) 0.12 @(turnright) 1*$m}
+@(repeat) 45{@(forward) 1 @(turnright) 1*$m}
+@(repeat) 30{@(forward) 25
+@(backward) 25
+@(turnright) 12}
+}
+@(reset)
+@(turnright) 90 @(pu)
+@(backward) 150 @(pd)
+@(turnleft) 45
+$m = 1
+@(repeat) 4{
+shape $m
+$m = $m*-1
+}

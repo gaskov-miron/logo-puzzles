@@ -1,0 +1,24 @@
+kturtle-script-v1.0
+@(learn) shape{
+@(turnleft) 90
+@(forward) 60 @(turnright) 90
+@(forward) 120 @(turnright) 90
+@(forward) 60 @(turnright) 90
+@(forward) 30 @(turnright) 90 
+@(forward) 30 @(pu)
+@(backward) 30
+@(turnright) 90 @(backward) 90 @(turnright) 90
+@(pd)
+@(forward) 90 @(turnleft) 90
+@(forward) 120 @(turnleft) 90
+@(forward) 60 @(turnleft) 90
+@(forward) 30 @(turnleft) 90
+@(forward) 30 @(pu) @(backward) 30
+@(turnleft) 90 @(backward) 90 @(pd) 
+}
+@(reset)
+@(turnright) 45
+@(repeat) 4{
+shape
+@(turnright) 90
+}
