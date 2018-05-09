@@ -1,0 +1,22 @@
+kturtle-script-v1.0
+@(learn) shape $sh{
+@(forward) $sh @(repeat) 4{@(forward) $sh @(turnright) 90}
+@(pu) @(backward) $sh @(pd) 
+}
+@(reset)
+@(pu) @(forward) 100 @(pd)
+@(turnleft) 90 @(pu)
+@(forward) 180 @(turnright) 90
+@(pd)
+$m = 10
+$d = 2
+@(repeat) 10{
+shape $m
+@(pu) @(turnright) 90
+@(forward) $m+4
+@(turnleft) 90
+@(backward) $d
+$m = $m*1.2
+$d = $d*1.6
+@(pd)
+}
