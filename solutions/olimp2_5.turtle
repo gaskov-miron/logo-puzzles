@@ -1,0 +1,22 @@
+kturtle-script-v1.0
+@(learn) shape $run@(,) $lv{
+@(forward) $run
+@(if) $lv > 0 {
+@(turnleft) 45
+shape $run/2@(,) $lv-1
+@(turnright) 45
+shape $run/2@(,) $lv-1
+@(turnright) 45
+shape $run/2@(,) $lv-1
+@(turnleft) 45
+} @(pu)
+@(backward) $run
+@(pd)
+}
+
+@(reset)
+@(repeat) 5{
+shape 50@(,) 3
+@(pu) @(forward) 25 @(turnright) 72
+@(pd)
+}

@@ -1,0 +1,9 @@
+kturtle-script-v1.0
+@(reset)
+@(pu) @(turnright) 90
+@(backward) 100 @(turnleft) 90 @(pd)
+$n = 1.8
+@(repeat) 10{
+  @(repeat) 180 {@(forward) $n @(turnright) 1}
+  $n = $n - 0.18
+}
