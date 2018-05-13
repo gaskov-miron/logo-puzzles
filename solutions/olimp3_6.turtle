@@ -1,0 +1,15 @@
+kturtle-script-v1.0
+@(reset) @(pd)
+$m = 6
+$k = 4
+@(repeat) $k{
+  @(repeat) $m{
+  @(turnleft) 60
+  @(repeat) 8{@(forward) 10 @(turnright) 60}
+  @(turnleft) 60
+  }
+  @(pu)
+  @(repeat) $m{@(repeat) 2{@(backward) 10 @(turnleft) 60} @(turnright) 120}
+  @(pd)
+  @(turnright) 60 @(forward) 10 @(turnleft) 60 @(forward) 10 
+}

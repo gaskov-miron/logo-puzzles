@@ -1,0 +1,38 @@
+kturtle-script-v1.0
+@(learn) sh2 $run{
+@(turnright) 90
+@(forward) $run / 2
+@(turnright) 90
+@(forward) 5
+@(turnright) 90
+@(pu) @(forward) $run @(pd)
+@(turnright) 90
+@(forward) 5
+@(turnright) 90
+@(forward) $run / 2
+@(turnleft) 90
+}
+@(learn) sh1 $run{
+@(turnright) 90
+@(forward) $run / 2
+@(turnleft) 90
+@(forward) 5
+@(turnleft) 90
+@(pu) @(forward) $run @(pd)
+@(turnleft) 90
+@(forward) 5
+@(turnleft) 90
+@(forward) $run / 2
+@(turnleft) 90
+}
+@(reset)
+@(forward) 20
+$run = 90
+@(repeat) 4{
+sh2 $run
+@(forward) 10
+$run = $run-10
+sh1 $run
+@(forward) 10
+$run = $run-10
+}
