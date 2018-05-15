@@ -5,9 +5,8 @@ kturtle-script-v1.0
   shape $run/4@(,) $n-1 @(turnright) 120
   shape $run/4@(,) $n-1 @(turnleft) 120
   shape $run/4@(,) $n-1 @(turnright) 120
-  shape $run/4@(,) $n-1 @(turnleft) 60
-  shape $run/4@(,) $n-1 @(pu)
-  @(backward) $run*3 @(pd)
+  shape $run/4@(,) $n-1 @(turnleft) 60 @(pu)
+  @(backward) $run*2 @(pd)
   @(turnright) 60
   shape $run/4@(,) $n-1 @(turnleft) 120
   shape $run/4@(,) $n-1 @(turnright) 120
