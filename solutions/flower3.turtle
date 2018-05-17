@@ -1,0 +1,11 @@
+kturtle-script-v1.0
+@(reset) @(pd)
+@(repeat) 8{
+  @(repeat) 45{@(forward) 0.2 @(turnright) 1} 
+  @(turnleft) 90
+  @(repeat) 90{@(forward) 0.8 @(turnleft) 1}
+  @(repeat) 138{@(forward) 0.4 @(turnleft) 1}
+  @(repeat) 138{@(turnright) 1 @(backward) 0.4 }
+  @(repeat) 90{@(turnright) 1 @(backward) 0.8}
+  @(turnright) 90
+}
