@@ -1,0 +1,41 @@
+kturtle-script-v1.0
+@(reset) @(pd)
+@(repeat) 4{
+@(repeat) 2{@(forward) 15 @(turnright) 45 @(forward) 15 @(turnright) 135}
+@(turnright) 45
+@(forward) 15 @(turnright) 45 @(forward) 15
+@(turnleft) 22.5 @(forward) 7 @(turnleft) 90
+@(repeat) 360{@(forward) 0.05 @(turnright) 1}
+@(turnright) 90 @(backward) 7 @(turnright) 157.5
+@(forward) 15 @(turnright) 45 @(forward) 15 @(turnright) 180
+}
+}
+@(forward) 15
+@(repeat) 8{
+@(repeat) 70{@(forward) 0.5 @(turnright) 1} @(turnright) 90
+@(repeat) 70{@(forward) 0.5 @(turnright) 1} @(turnright) 175
+}
+@(repeat) 70{@(forward) 0.5 @(turnright) 1} @(turnleft) 34
+@(repeat) 16 {
+@(repeat) 180{@(forward) 0.155 @(turnright) 1} 
+@(turnleft) 180@(turnright) 360/16
+}
+@(turnright) 11
+@(repeat) 4{
+@(repeat) 45 {@(forward) 0.310 @(turnright) 1}
+@(turnleft) 75
+@(repeat) 180{@(forward) 0.155 @(turnleft) 1} 
+@(repeat) 180{@(turnright) 1 @(backward) 0.155}
+@(turnright) 75
+@(repeat) 135 {@(forward) 0.310 @(turnright) 1}
+@(turnleft) 135
+@(repeat) 45 {@(forward) 0.310 @(turnright) 1}
+@(turnleft) 75
+@(repeat) 90{@(forward) 0.155 @(turnleft) 1}
+@(turnright) 90 @(forward) 10 @(backward) 10 @(turnleft) 90
+@(repeat) 90{@(forward) 0.155 @(turnleft) 1}
+@(repeat) 180{@(turnright) 1 @(backward) 0.155}
+@(turnright) 75
+@(repeat) 135 {@(forward) 0.310 @(turnright) 1}
+@(turnleft) 135
+}
