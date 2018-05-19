@@ -1,0 +1,21 @@
+kturtle-script-v1.0
+@(reset) @(turnright) 45
+@(repeat) 4{
+@(repeat) 90{@(forward) 0.2 @(turnright) 1}
+@(turnleft) 90
+@(forward) 30 @(turnleft) 90
+@(repeat) 90{@(forward) 0.2 @(turnright) 1} 
+@(turnleft) 90 @(forward) 30 @(turnleft) 90 @(forward) 30
+@(turnleft) 70 @(repeat) 180{@(forward) 0.2 @(turnleft) 1}
+@(repeat) 180{@(turnright) 1 @(backward) 0.2}
+@(turnright) 70 @(backward) 30
+@(turnright) 90 @(backward) 30
+@(turnright) 90
+@(repeat) 180{@(forward) 0.2 @(turnright) 1}
+@(turnleft) 90 @(forward) 32 @(turnright) 90
+@(forward) 5 @(backward) 5 @(turnleft) 90
+@(backward) 32 @(turnright) 90 
+@(repeat) 90{@(forward) 0.2 @(turnright) 1}
+@(turnright) 90 @(backward) 30
+@(turnright) 90 
+}
