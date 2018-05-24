@@ -1,0 +1,12 @@
+kturtle-script-v1.0
+@(reset)
+@(turnright) 25
+@(repeat) 3{
+@(repeat) 360{@(turnright) 1 @(forward) 0.1} @(pu) @(forward) 12 @(pd) @(turnright) 40
+@(repeat) 8{@(forward) 8 @(turnright) 100 @(forward) 8 @(turnleft) 55}
+@(turnleft) 62.5 @(pu) @(forward) 12 @(turnright) 105 @(pd)
+@(repeat) 8{@(turnright) 16 @(forward) 10 @(turnleft) 16 @(forward) 10 @(turnright) 45}
+@(turnleft) 90 @(pu) @(forward) 3 @(pd) @(turnright) 78
+@(repeat) 500{@(turnright) 1 @(forward) 0.5} @(turnleft) 90
+@(pu) @(forward) 30 @(pd)
+}
